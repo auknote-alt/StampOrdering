@@ -1,0 +1,1926 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งทำตรายางออนไลน์ | ห้างหุ้นส่วนจำกัด อ.วัฒนภัณฑ์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --surface: #ffffff;
+      --surface-subtle: #f8fafc;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --ink: #0f172a;
+      --muted: #475569;
+      --subtle: #64748b;
+      --brand: #1e3a8a;
+      --brand-hover: #172554;
+      --brand-light: #eff6ff;
+      --brand-border: #bfdbfe;
+      --line-green: #16a34a;
+      --line-green-hover: #15803d;
+      --line-green-light: #f0fdf4;
+      --amber-bg: #fffbeb;
+      --amber-border: #fde68a;
+      --amber-ink: #92400e;
+      --radius-sm: 8px;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+      --shadow: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+      --font-ui: 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-sarabun: 'Sarabun', Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-ui);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background: var(--brand);
+      color: #ffffff;
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+
+    .top-bar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-bar-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+    }
+
+    .top-bar-divider {
+      opacity: 0.4;
+    }
+
+    .top-bar-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 12.5px;
+    }
+
+    .top-bar-links a {
+      color: #dbeafe;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .top-bar-links a:hover {
+      color: #ffffff;
+    }
+
+    /* Main Header */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 30;
+    }
+
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--brand);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 0;
+      line-height: 1.25;
+    }
+
+    .brand-subtitle {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 2px 0 0;
+    }
+
+    .header-contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--ink);
+    }
+
+    .contact-pill.line-pill {
+      background: var(--line-green-light);
+      border-color: #bbf7d0;
+      color: #166534;
+    }
+
+    /* Hero Banner */
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
+      color: #ffffff;
+      padding: 28px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-desc {
+      margin: 0;
+      color: #dbeafe;
+      font-size: 14.5px;
+      max-width: 680px;
+    }
+
+    .sample-price-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: #fef08a;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    /* Main Container & Two-Column Grid */
+    .main-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+    }
+
+    .builder-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (min-width: 960px) {
+      .builder-grid {
+        grid-template-columns: 7fr 5fr;
+      }
+      .sticky-column {
+        position: sticky;
+        top: 86px;
+      }
+    }
+
+    /* Step Cards */
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .step-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .step-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    .step-helper {
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    /* Option Grid for Step 1 & Step 2 */
+    .option-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .option-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+
+    .choice-card {
+      position: relative;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      font-family: inherit;
+    }
+
+    .choice-card:hover {
+      border-color: var(--brand-border);
+      background: var(--surface-subtle);
+    }
+
+    .choice-card:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+    }
+
+    .choice-card.active {
+      border-color: var(--brand);
+      background: var(--brand-light);
+      box-shadow: 0 0 0 1px var(--brand);
+    }
+
+    .choice-badge {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #1e40af;
+    }
+
+    .choice-card.active .choice-badge {
+      background: var(--brand);
+      color: #ffffff;
+    }
+
+    .choice-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 2px 0;
+    }
+
+    .choice-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .choice-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
+    }
+
+    .dimension-tag {
+      font-family: monospace;
+      font-size: 12px;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Auto-recommendation & Scale bar */
+    .info-strip {
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .info-strip strong {
+      color: var(--ink);
+    }
+
+    /* Step 3 Inputs */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+
+    .line-inputs-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .line-input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .line-tag {
+      width: 74px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .text-input {
+      width: 100%;
+      font: inherit;
+      font-size: 14px;
+      padding: 9px 12px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      color: var(--ink);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .text-input:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.12);
+    }
+
+    .quick-presets {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .preset-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-right: 4px;
+    }
+
+    .preset-btn {
+      font: inherit;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface-subtle);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .preset-btn:hover {
+      background: var(--brand-light);
+      border-color: var(--brand-border);
+      color: var(--brand);
+    }
+
+    /* Controls row: Font, Border, Ink */
+    .controls-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill-btn {
+      flex: 1;
+      min-width: 90px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .pill-btn:hover {
+      border-color: var(--border-strong);
+      background: var(--surface-subtle);
+    }
+
+    .pill-btn.active {
+      border-color: var(--brand);
+      background: var(--brand-light);
+      color: var(--brand);
+    }
+
+    .ink-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* File Upload Box */
+    .upload-zone {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border: 1.5px dashed var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: var(--surface-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .upload-info {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .upload-info strong {
+      color: var(--ink);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .upload-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-outline {
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+
+    /* Right Column: Live Preview & Summary Card */
+    .preview-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .preview-header {
+      background: var(--brand);
+      color: #ffffff;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .preview-header h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .live-badge {
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+    }
+
+    .preview-body {
+      padding: 20px;
+    }
+
+    /* Paper Canvas Simulation */
+    .paper-stage {
+      background-color: #ffffff;
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 16px 16px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      min-height: 220px;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: inset 0 2px 6px rgba(15, 23, 42, 0.04);
+    }
+
+    .stage-dimension-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 11.5px;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: var(--muted);
+    }
+
+    .stamp-impression {
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px 20px;
+      max-width: 100%;
+      word-break: break-word;
+      user-select: none;
+      filter: contrast(1.02);
+    }
+
+    .stamp-impression.font-sarabun {
+      font-family: var(--font-sarabun);
+    }
+
+    .stamp-impression.font-modern {
+      font-family: var(--font-ui);
+    }
+
+    .stamp-logo-preview {
+      max-height: 44px;
+      max-width: 90px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+
+    .stamp-line {
+      line-height: 1.35;
+      margin: 1px 0;
+    }
+
+    .stamp-line.line-primary {
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .stamp-line.line-secondary {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .stamp-empty-hint {
+      font-size: 13.5px;
+      opacity: 0.65;
+      font-style: italic;
+    }
+
+    /* Real-world Scale Comparison Bar */
+    .scale-comparison {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--surface-subtle);
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    /* Cross-sell Box (Step 4 / Right Column) */
+    .upsell-box {
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      background: var(--amber-bg);
+      border: 1px solid var(--amber-border);
+    }
+
+    .upsell-header {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--amber-ink);
+      margin: 0 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .upsell-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .upsell-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #fde68a;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .upsell-item input {
+      margin-right: 8px;
+      accent-color: var(--brand);
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Quantity & Tax Invoice Controls */
+    .order-controls {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .qty-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .qty-stepper {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      font: inherit;
+      width: 34px;
+      height: 34px;
+      border: none;
+      background: var(--surface-subtle);
+      color: var(--ink);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .qty-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .qty-input {
+      width: 52px;
+      height: 34px;
+      border: none;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      text-align: center;
+      font: inherit;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .checkbox-row input {
+      width: 17px;
+      height: 17px;
+      accent-color: var(--brand);
+    }
+
+    /* Price Breakdown Box */
+    .price-summary {
+      margin-top: 16px;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .price-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-strong);
+    }
+
+    .price-total-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .price-total-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    .vat-caption {
+      font-size: 11.5px;
+      color: var(--subtle);
+      text-align: right;
+      margin-top: 2px;
+    }
+
+    /* Line Spec Textarea & Action Button */
+    .spec-box-wrapper {
+      margin-top: 16px;
+    }
+
+    .spec-textarea {
+      width: 100%;
+      height: 148px;
+      font-family: monospace;
+      font-size: 12.5px;
+      line-height: 1.45;
+      padding: 10px 12px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: #f8fafc;
+      color: var(--ink);
+      resize: vertical;
+    }
+
+    .btn-line-Order {
+      margin-top: 12px;
+      width: 100%;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 13px 18px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: var(--line-green);
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 2px 6px rgba(22, 163, 74, 0.25);
+      transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+
+    .btn-line-Order:hover {
+      background: var(--line-green-hover);
+    }
+
+    .btn-line-Order:active {
+      transform: translateY(1px);
+    }
+
+    .disclaimer-note {
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    /* Ready-made Stamp & Store Reference Section */
+    .catalog-ref-card {
+      margin-top: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .ref-badge {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--brand);
+      background: var(--brand-light);
+      border: 1px solid var(--brand-border);
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 36px 20px;
+      font-size: 13.5px;
+      margin-top: 40px;
+    }
+
+    .footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .footer-title {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-list a {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-highlights">
+        <span>ราคาสินค้ารวม VAT 7% แล้ว</span>
+        <span class="top-bar-divider">|</span>
+        <span>ออกใบกำกับภาษีเต็มรูปแบบได้ (B2B / โรงงาน / ราชการ)</span>
+        <span class="top-bar-divider">|</span>
+        <span>สั่งซื้อผ่าน Line OA: <strong>@aw2552</strong></span>
+      </div>
+      <div class="top-bar-links">
+        <a href="https://www.wattanaphan.com/" target="_blank" rel="noopener">หน้าหลักเว็บเดิม</a>
+        <a href="https://www.wattanaphan.com/stamp" target="_blank" rel="noopener">หน้าสั่งทำตรายางเดิม (/stamp)</a>
+        <a href="https://www.wattanaphan.com/category/12020/6683/%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B1%E0%B8%9A" target="_blank" rel="noopener">หมวดแท่นประทับ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <div class="brand-mark">อ.ว</div>
+        <div>
+          <h1 class="brand-title">ห้างหุ้นส่วนจำกัด อ.วัฒนภัณฑ์ (A.Wattanaphan Ltd., Part.)</h1>
+          <p class="brand-subtitle">ศูนย์รวมเครื่องเขียน อุปกรณ์สำนักงาน และบริการสั่งทำตรายาง ต.มาบตาพุด จ.ระยอง</p>
+        </div>
+      </div>
+      <div class="header-contact">
+        <span class="contact-pill">โทร: 092-958-9000, 065-991-5564</span>
+        <span class="contact-pill line-pill">Line OA: @aw2552</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-title">
+          <span>ระบบสั่งทำตรายางออนไลน์ (Interactive Stamp Configurator)</span>
+          <span class="sample-price-badge">ข้อมูลราคาประเมินตัวอย่าง (Sample Estimate Pricing)</span>
+        </div>
+        <p class="hero-desc">
+          ออกแบบข้อความ เลือกประเภทด้าม ขนาด และสีหมึก พร้อมดูตัวอย่างตราประทับแบบเรียลไทม์ (Live Preview) และสรุปสเปกส่งเข้าแชท Line OA (@aw2552) ได้ทันที
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div class="builder-grid">
+
+      <!-- Left Column: 4-Step Configurator -->
+      <div class="configurator-column">
+
+        <!-- Step 1: เลือกประเภทตรายาง -->
+        <section class="step-card" aria-labelledby="step1-heading">
+          <div class="step-header">
+            <div class="step-title-group">
+              <span class="step-number">1</span>
+              <h2 class="step-title" id="step1-heading">เลือกประเภทตรายาง (Stamp Type)</h2>
+            </div>
+            <span class="step-helper">เลือกชนิดด้ามตามลักษณะการใช้งาน</span>
+          </div>
+
+          <div class="option-grid-3" id="stamp-type-grid">
+            <!-- Rendered by JS -->
+          </div>
+        </section>
+
+        <!-- Step 2: เลือกขนาดหรือจำนวนบรรทัด -->
+        <section class="step-card" aria-labelledby="step2-heading">
+          <div class="step-header">
+            <div class="step-title-group">
+              <span class="step-number">2</span>
+              <h2 class="step-title" id="step2-heading">เลือกขนาดตรายางตามจำนวนบรรทัด (Size &amp; Dimension)</h2>
+            </div>
+            <span class="step-helper" id="auto-size-status">ระบบแนะนำขนาดตามจำนวนบรรทัดให้อัตโนมัติ</span>
+          </div>
+
+          <div class="option-grid-2" id="stamp-size-grid">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="info-strip">
+            <div>
+              <strong>คำแนะนำขนาดอัตโนมัติ (Auto-Size Recommendation):</strong>
+              <span id="recommendation-text">หากกรอก 1-2 บรรทัด แนะนำขนาด 1.0 x 3.0 ซม.</span>
+            </div>
+            <button type="button" class="btn-outline" id="apply-recommended-btn" style="display:none;">ปรับใช้ขนาดที่แนะนำ</button>
+          </div>
+        </section>
+
+        <!-- Step 3: พิมพ์ข้อความ / เลือกฟอนต์ / สีหมึก / อัปโหลดโลโก้ -->
+        <section class="step-card" aria-labelledby="step3-heading">
+          <div class="step-header">
+            <div class="step-title-group">
+              <span class="step-number">3</span>
+              <h2 class="step-title" id="step3-heading">กรอกข้อความและตั้งค่ารูปแบบตราประทับ</h2>
+            </div>
+            <span class="step-helper">พิมพ์ข้อความตามบรรทัดที่ต้องการให้แสดงบนตรายาง</span>
+          </div>
+
+          <div class="quick-presets">
+            <span class="preset-label">เติมข้อความตัวอย่างเพื่อทดสอบ:</span>
+            <button type="button" class="preset-btn" data-preset="name">ชื่อ-ตำแหน่ง (2 บรรทัด)</button>
+            <button type="button" class="preset-btn" data-preset="received">ตราตรวจรับเอกสาร (3 บรรทัด)</button>
+            <button type="button" class="preset-btn" data-preset="company">ที่อยู่บริษัทออกใบกำกับภาษี (4 บรรทัด)</button>
+            <button type="button" class="preset-btn" data-preset="clear">ล้างข้อความ</button>
+          </div>
+
+          <div class="line-inputs-stack">
+            <div class="line-input-row">
+              <label class="line-tag" for="line1-input">บรรทัดที่ 1</label>
+              <input type="text" id="line1-input" class="text-input" placeholder="เช่น ชื่อบริษัท หรือ ชื่อ-นามสกุล (ตัวหนา)" maxlength="60">
+            </div>
+            <div class="line-input-row">
+              <label class="line-tag" for="line2-input">บรรทัดที่ 2</label>
+              <input type="text" id="line2-input" class="text-input" placeholder="เช่น ตำแหน่ง / แผนก / เลขประจำตัวผู้เสียภาษี" maxlength="60">
+            </div>
+            <div class="line-input-row">
+              <label class="line-tag" for="line3-input">บรรทัดที่ 3</label>
+              <input type="text" id="line3-input" class="text-input" placeholder="เช่น ที่อยู่ หรือ วันที่รับเอกสาร (เว้นว่างได้)" maxlength="60">
+            </div>
+            <div class="line-input-row">
+              <label class="line-tag" for="line4-input">บรรทัดที่ 4</label>
+              <input type="text" id="line4-input" class="text-input" placeholder="เช่น เบอร์โทรศัพท์ หรือ สาขา (เว้นว่างได้)" maxlength="60">
+            </div>
+          </div>
+
+          <div class="controls-grid">
+            <!-- Font Family -->
+            <div>
+              <div class="form-label">รูปแบบอักษร (Font)</div>
+              <div class="pill-group" id="font-group">
+                <button type="button" class="pill-btn active" data-font="sarabun">สารบรรณ (ทางการ)</button>
+                <button type="button" class="pill-btn" data-font="modern">สุขุมวิท / โมเดิร์น</button>
+              </div>
+            </div>
+
+            <!-- Border Style -->
+            <div>
+              <div class="form-label">รูปแบบกรอบ (Border)</div>
+              <div class="pill-group" id="border-group">
+                <button type="button" class="pill-btn active" data-border="single">มีกรอบเดี่ยว</button>
+                <button type="button" class="pill-btn" data-border="none">ไม่มีกรอบ</button>
+                <button type="button" class="pill-btn" data-border="oval">กรอบวงรี/กลม</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ink Color -->
+          <div style="margin-top: 16px;">
+            <div class="form-label">สีหมึกตรายาง (Ink Color)</div>
+            <div class="pill-group" id="ink-group">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Logo Upload -->
+          <div class="upload-zone">
+            <div class="upload-info">
+              <strong>แนบไฟล์โลโก้บริษัท หรือภาพร่างตัวอย่าง (ถ้ามี)</strong>
+              <span id="uploaded-filename">รองรับไฟล์ภาพ PNG, JPG สำหรับจำลองในช่องตัวอย่างด้านขวา (และส่งไฟล์จริงทาง Line)</span>
+            </div>
+            <div class="upload-actions">
+              <label class="btn-outline" for="logo-file-input" style="cursor:pointer;">เลือกไฟล์ภาพโลโก้</label>
+              <input type="file" id="logo-file-input" accept="image/*" style="display:none;">
+              <button type="button" class="btn-outline" id="remove-logo-btn" style="display:none;">ลบโลโก้</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Real Store Product Reference (Ready-made Stamp SANBY SKU 1100) -->
+        <div class="catalog-ref-card">
+          <div>
+            <span class="ref-badge">สินค้าจริงในระบบแคตตาล็อก (รหัสสินค้า 1100)</span>
+            <h3 style="margin: 4px 0; font-size: 16px;">ตรายางข้อความสำเร็จรูป หมึกในตัว ยี่ห้อ SANBY</h3>
+            <p style="margin: 0; font-size: 13px; color: var(--muted);">
+              สำหรับคำมาตรฐานทั่วไป ทางร้านมีตรายางสำเร็จรูปพร้อมใช้งานจำหน่าย ราคาปลีก <strong>122.00 บาท/อัน</strong> (ราคาส่ง โหลละ 1,390 บาท รวม VAT)
+            </p>
+          </div>
+          <a href="https://www.wattanaphan.com/category" target="_blank" rel="noopener" class="btn-outline">ดูสินค้าทั้งหมดบนเว็บเดิม</a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Sticky Live Preview & Step 4 Order Summary -->
+      <div class="sticky-column">
+        <div class="preview-card">
+          <div class="preview-header">
+            <h2>4. ตัวอย่างตราประทับ &amp; สรุปใบสั่งทำ</h2>
+            <span class="live-badge">Live Preview</span>
+          </div>
+
+          <div class="preview-body">
+            <!-- Paper Canvas Preview -->
+            <div class="paper-stage" aria-label="ตัวอย่างตราประทับจำลอง">
+              <span class="stage-dimension-badge" id="preview-dim-badge">ขนาด: 1.0 x 3.0 ซม.</span>
+
+              <div id="stamp-impression-box" class="stamp-impression font-sarabun">
+                <img id="stamp-logo-img" class="stamp-logo-preview" alt="โลโก้ตัวอย่าง" style="display:none;">
+                <div id="stamp-lines-container">
+                  <!-- Rendered live by JS -->
+                </div>
+              </div>
+            </div>
+
+            <div class="scale-comparison">
+              <span id="scale-ref-label">เทียบขนาดจริง: ใกล้เคียงความกว้างเหรียญ 10 บาท (2.6 ซม.)</span>
+              <span id="preview-ink-label" style="font-weight:600;">หมึกสีน้ำเงิน</span>
+            </div>
+
+            <!-- Cross-Selling Upsell Box (Shown when Handle stamp is selected) -->
+            <div class="upsell-box" id="upsell-section">
+              <div class="upsell-header">
+                <span>สั่งซื้อคู่กัน: แท่นประทับตราช้าง (สำหรับตรายางด้ามธรรมดา)</span>
+                <a href="https://www.wattanaphan.com/category/12020/6683/%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B1%E0%B8%9A" target="_blank" rel="noopener" style="font-size:11.5px; text-decoration:underline;">ดูหมวดแท่นประทับ</a>
+              </div>
+              <div class="upsell-list">
+                <label class="upsell-item">
+                  <span>
+                    <input type="checkbox" id="upsell-e03" data-name="แท่นประทับ ตราช้าง No.E03" data-price="24">
+                    รับเพิ่ม <strong>แท่นประทับ ตราช้าง No.E03</strong> (ราคาตัวอย่าง)
+                  </span>
+                  <strong>+24 บาท</strong>
+                </label>
+                <label class="upsell-item">
+                  <span>
+                    <input type="checkbox" id="upsell-e04" data-name="แท่นประทับ ตราช้าง No.E04" data-price="23">
+                    รับเพิ่ม <strong>แท่นประทับ ตราช้าง No.E04</strong> (ราคาตัวอย่าง)
+                  </span>
+                  <strong>+23 บาท</strong>
+                </label>
+              </div>
+            </div>
+
+            <!-- Quantity & Tax Invoice -->
+            <div class="order-controls">
+              <div class="qty-row">
+                <label for="stamp-qty-input" style="font-size:14px; font-weight:600;">จำนวนที่ต้องการสั่งทำ (ชิ้น)</label>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-btn" id="qty-minus-btn" aria-label="ลดจำนวน">−</button>
+                  <input type="number" id="stamp-qty-input" class="qty-input" value="1" min="1" max="999">
+                  <button type="button" class="qty-btn" id="qty-plus-btn" aria-label="เพิ่มจำนวน">+</button>
+                </div>
+              </div>
+
+              <label class="checkbox-row">
+                <input type="checkbox" id="tax-invoice-check" checked>
+                <span>ต้องการใบกำกับภาษีเต็มรูปแบบ (แจ้งชื่อบริษัท/เลขผู้เสียภาษีทาง Line)</span>
+              </label>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="price-summary">
+              <div class="price-row">
+                <span id="summary-type-label">ตรายางด้ามธรรมดา (ฐานราคาประเมิน)</span>
+                <span id="summary-base-price">60.00 บาท</span>
+              </div>
+              <div class="price-row">
+                <span id="summary-size-label">ขนาด 1.0 x 3.0 ซม.</span>
+                <span id="summary-size-price">+0.00 บาท</span>
+              </div>
+              <div class="price-row" id="summary-addon-row" style="display:none;">
+                <span id="summary-addon-label">อุปกรณ์เสริมแท่นประทับ</span>
+                <span id="summary-addon-price">+0.00 บาท</span>
+              </div>
+              <div class="price-total-row">
+                <span class="price-total-label">ราคาประเมินรวม (<span id="summary-qty-count">1</span> ชิ้น)</span>
+                <span class="price-total-value" id="summary-total-price">60.00 บาท</span>
+              </div>
+              <div class="vat-caption">ราคารวมภาษีมูลค่าเพิ่ม (VAT 7%) แล้ว | ยังไม่รวมค่าจัดส่งพัสดุ</div>
+            </div>
+
+            <!-- Generated Line Order Text & Copy Action -->
+            <div class="spec-box-wrapper">
+              <div class="form-label">
+                <span>ใบสรุปสเปกสำหรับส่งเข้าแชท Line OA (@aw2552)</span>
+              </div>
+              <textarea id="line-spec-output" class="spec-textarea" readonly aria-label="ข้อความสรุปสเปกสั่งทำตรายาง"></textarea>
+
+              <button type="button" class="btn-line-Order" id="copy-spec-btn">
+                <span id="copy-btn-text">คัดลอกสเปกตรายางและสั่งทำผ่าน Line @aw2552</span>
+              </button>
+
+              <p class="disclaimer-note">
+                *หมายเหตุ: ราคาที่แสดงเป็นราคาประเมินเบื้องต้น (Sample Spec Pricing) แอดมินจะส่งแบบ Artwork สุดท้ายพร้อมยืนยันราคาที่แน่นอนให้ตรวจทานทาง Line (<strong>@aw2552</strong>) ก่อนผลิตจริง
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer with Verified Company Details -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h3 class="footer-title">ห้างหุ้นส่วนจำกัด อ.วัฒนภัณฑ์ (สำนักงานใหญ่)</h3>
+        <p style="margin: 0 0 8px;">A.Wattanaphan Ltd., Part.</p>
+        <p style="margin: 0; color: #94a3b8;">
+          เลขประจำตัวผู้เสียภาษี: <strong>0213552000869</strong><br>
+          ที่อยู่: 20/3-4 ซ.โสภณ 5 ถ.สุขุมวิท 38 ต.มาบตาพุด อ.เมือง จ.ระยอง 21150
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-title">ช่องทางติดต่อและเวลาทำการ</h3>
+        <ul class="footer-list">
+          <li>โทรศัพท์: 092-958-9000, 065-991-5564</li>
+          <li>Line Official Account: <strong>@aw2552</strong></li>
+          <li>อีเมล: wattanaphan@hotmail.com</li>
+          <li>จันทร์ - ศุกร์: 07:30 - 17:00 น. | เสาร์: 09:00 - 16:30 น.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">ลิงก์อ้างอิงจากเว็บไซต์ร้าน</h3>
+        <ul class="footer-list">
+          <li><a href="https://www.wattanaphan.com/" target="_blank" rel="noopener">หน้าแรก wattanaphan.com</a></li>
+          <li><a href="https://www.wattanaphan.com/stamp" target="_blank" rel="noopener">หน้าสั่งทำตรายางเดิม (wattanaphan.com/stamp)</a></li>
+          <li><a href="https://www.wattanaphan.com/category" target="_blank" rel="noopener">หมวดหมู่สินค้าทั้งหมด</a></li>
+          <li><a href="https://www.wattanaphan.com/category/12020/6683/%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B1%E0%B8%9A" target="_blank" rel="noopener">แท่นประทับและอุปกรณ์ตรายาง</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Specification Data from stamp-builder-spec.md
+      const STAMP_OPTIONS = {
+        stamp_types: [
+          {
+            id: "handle",
+            name: "ตรายางด้ามธรรมดา (ด้ามไม้/พลาสติก)",
+            badge: "ขายดีสำหรับฝ่ายบัญชี",
+            description: "คุ้มค่า ทนทาน ใช้คู่กับแท่นประทับหมึกแยก",
+            base_price: 60
+          },
+          {
+            id: "self_inking",
+            name: "ตรายางหมึกในตัว (Self-Inking / Flash Stamp)",
+            badge: "พกพาสะดวก",
+            description: "พกพาสะดวก ประทับคมชัด ไม่ต้องพกแท่นหมึกแยก",
+            base_price: 150
+          },
+          {
+            id: "company_seal",
+            name: "ตรายางโลโก้บริษัท (สำหรับจดทะเบียน/ออกเอกสาร)",
+            badge: "มาตรฐานกรมพัฒนาธุรกิจการค้า",
+            description: "ทรงกลมหรือทรงรี รองรับการใส่โลโก้บริษัทคมชัดสูง",
+            base_price: 250
+          }
+        ],
+        sizes: [
+          {
+            id: "s1",
+            label: "ขนาดเล็ก (1-2 บรรทัด)",
+            dimension: "1.0 x 3.0 ซม.",
+            use_case: "ชื่อ-นามสกุล, ตำแหน่ง",
+            scale_note: "เทียบขนาดจริง: ใกล้เคียงความกว้างเหรียญ 10 บาท (2.6 ซม.)",
+            price_add: 0
+          },
+          {
+            id: "s2",
+            label: "ขนาดกลาง (2-3 บรรทัด)",
+            dimension: "1.5 x 4.0 ซม.",
+            use_case: "ชื่อ-ตำแหน่ง-แผนก, ข้อความตรวจรับ",
+            scale_note: "เทียบขนาดจริง: ประมาณครึ่งหนึ่งของด้านกว้างบัตรประชาชน",
+            price_add: 40
+          },
+          {
+            id: "s3",
+            label: "ขนาดใหญ่ (4-5 บรรทัด)",
+            dimension: "2.2 x 5.5 ซม.",
+            use_case: "ชื่อบริษัทและที่อยู่สำหรับออกใบกำกับภาษี",
+            scale_note: "เทียบขนาดจริง: กว้างเกือบเท่าบัตรประชาชนมาตรฐาน (5.4 ซม.)",
+            price_add: 90
+          },
+          {
+            id: "s4",
+            label: "ทรงกลม/วงรี มาตรฐานบริษัท",
+            dimension: "เส้นผ่านศูนย์กลาง 4.0 ซม.",
+            use_case: "ตราประทับนิติบุคคลพร้อมโลโก้",
+            scale_note: "เทียบขนาดจริง: ขนาดมาตรฐานสำหรับประทับหนังสือรับรองบริษัท",
+            price_add: 120
+          }
+        ],
+        ink_colors: [
+          { id: "blue", name: "สีน้ำเงิน (ยอดนิยม)", hex: "#1D4ED8" },
+          { id: "red", name: "สีแดง (เอกสารด่วน/สำเนา)", hex: "#DC2626" },
+          { id: "black", name: "สีดำ (เป็นทางการ)", hex: "#111827" }
+        ]
+      };
+
+      // Application State (starts with clean empty text lines per user input rule)
+      const state = {
+        stampTypeId: "handle",
+        sizeId: "s1",
+        inkColorId: "blue",
+        fontStyle: "sarabun",
+        borderStyle: "single",
+        lines: ["", "", "", ""],
+        logoDataUrl: null,
+        logoFileName: "",
+        quantity: 1,
+        needTaxInvoice: true,
+        addonE03: false,
+        addonE04: false
+      };
+
+      // DOM Elements
+      const typeGridEl = document.getElementById("stamp-type-grid");
+      const sizeGridEl = document.getElementById("stamp-size-grid");
+      const inkGroupEl = document.getElementById("ink-group");
+      const fontGroupEl = document.getElementById("font-group");
+      const borderGroupEl = document.getElementById("border-group");
+
+      const lineInputs = [
+        document.getElementById("line1-input"),
+        document.getElementById("line2-input"),
+        document.getElementById("line3-input"),
+        document.getElementById("line4-input")
+      ];
+
+      const recommendationTextEl = document.getElementById("recommendation-text");
+      const applyRecommendedBtn = document.getElementById("apply-recommended-btn");
+
+      const logoFileInput = document.getElementById("logo-file-input");
+      const removeLogoBtn = document.getElementById("remove-logo-btn");
+      const uploadedFilenameEl = document.getElementById("uploaded-filename");
+      const stampLogoImg = document.getElementById("stamp-logo-img");
+
+      const previewDimBadge = document.getElementById("preview-dim-badge");
+      const stampImpressionBox = document.getElementById("stamp-impression-box");
+      const stampLinesContainer = document.getElementById("stamp-lines-container");
+      const scaleRefLabel = document.getElementById("scale-ref-label");
+      const previewInkLabel = document.getElementById("preview-ink-label");
+
+      const upsellSection = document.getElementById("upsell-section");
+      const upsellE03 = document.getElementById("upsell-e03");
+      const upsellE04 = document.getElementById("upsell-e04");
+
+      const qtyInput = document.getElementById("stamp-qty-input");
+      const qtyMinusBtn = document.getElementById("qty-minus-btn");
+      const qtyPlusBtn = document.getElementById("qty-plus-btn");
+      const taxInvoiceCheck = document.getElementById("tax-invoice-check");
+
+      const summaryTypeLabel = document.getElementById("summary-type-label");
+      const summaryBasePrice = document.getElementById("summary-base-price");
+      const summarySizeLabel = document.getElementById("summary-size-label");
+      const summarySizePrice = document.getElementById("summary-size-price");
+      const summaryAddonRow = document.getElementById("summary-addon-row");
+      const summaryAddonLabel = document.getElementById("summary-addon-label");
+      const summaryAddonPrice = document.getElementById("summary-addon-price");
+      const summaryQtyCount = document.getElementById("summary-qty-count");
+      const summaryTotalPrice = document.getElementById("summary-total-price");
+
+      const lineSpecOutput = document.getElementById("line-spec-output");
+      const copySpecBtn = document.getElementById("copy-spec-btn");
+      const copyBtnText = document.getElementById("copy-btn-text");
+
+      let recommendedSizeId = "s1";
+
+      function formatTHB(amount) {
+        return Number(amount).toLocaleString("th-TH", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
+      }
+
+      // Render Step 1: Stamp Types
+      function renderStampTypes() {
+        typeGridEl.innerHTML = "";
+        STAMP_OPTIONS.stamp_types.forEach(function (item) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice-card" + (state.stampTypeId === item.id ? " active" : "");
+          btn.innerHTML =
+            '<div>' +
+              '<span class="choice-badge">' + item.badge + '</span>' +
+              '<div class="choice-title">' + item.name + '</div>' +
+              '<p class="choice-desc">' + item.description + '</p>' +
+            '</div>' +
+            '<div class="choice-meta">' +
+              '<span>ราคาเริ่มต้น (ตัวอย่าง)</span>' +
+              '<span>' + item.base_price + ' บาท</span>' +
+            '</div>';
+          btn.addEventListener("click", function () {
+            state.stampTypeId = item.id;
+            if (item.id === "company_seal") {
+              state.sizeId = "s4";
+              state.borderStyle = "oval";
+              syncBorderButtons();
+            }
+            renderStampTypes();
+            renderSizes();
+            updateAll();
+          });
+          typeGridEl.appendChild(btn);
+        });
+      }
+
+      // Render Step 2: Sizes
+      function renderSizes() {
+        sizeGridEl.innerHTML = "";
+        STAMP_OPTIONS.sizes.forEach(function (sz) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice-card" + (state.sizeId === sz.id ? " active" : "");
+          const addText = sz.price_add === 0 ? "ไม่บวกเพิ่ม (+0฿)" : "+" + sz.price_add + " บาท";
+          btn.innerHTML =
+            '<div>' +
+              '<div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">' +
+                '<span class="choice-title">' + sz.label + '</span>' +
+                '<span class="dimension-tag">' + sz.dimension + '</span>' +
+              '</div>' +
+              '<p class="choice-desc" style="margin-top:4px;">เหมาะสำหรับ: ' + sz.use_case + '</p>' +
+            '</div>' +
+            '<div class="choice-meta">' +
+              '<span>ส่วนต่างตามขนาด</span>' +
+              '<span>' + addText + '</span>' +
+            '</div>';
+          btn.addEventListener("click", function () {
+            state.sizeId = sz.id;
+            if (sz.id === "s4") {
+              state.borderStyle = "oval";
+              syncBorderButtons();
+            }
+            renderSizes();
+            updateAll();
+          });
+          sizeGridEl.appendChild(btn);
+        });
+      }
+
+      // Render Ink Colors
+      function renderInkColors() {
+        inkGroupEl.innerHTML = "";
+        STAMP_OPTIONS.ink_colors.forEach(function (ink) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "pill-btn" + (state.inkColorId === ink.id ? " active" : "");
+          btn.innerHTML =
+            '<span class="ink-dot" style="background:' + ink.hex + ';"></span>' +
+            '<span>' + ink.name + '</span>';
+          btn.addEventListener("click", function () {
+            state.inkColorId = ink.id;
+            renderInkColors();
+            updateAll();
+          });
+          inkGroupEl.appendChild(btn);
+        });
+      }
+
+      function syncBorderButtons() {
+        const btns = borderGroupEl.querySelectorAll(".pill-btn");
+        btns.forEach(function (b) {
+          b.classList.toggle("active", b.getAttribute("data-border") === state.borderStyle);
+        });
+      }
+
+      // Compute Auto-Size Recommendation based on non-empty lines or logo
+      function updateAutoRecommendation() {
+        const filledCount = state.lines.filter(function (l) {
+          return l.trim().length > 0;
+        }).length;
+
+        if (state.stampTypeId === "company_seal" || state.logoDataUrl) {
+          recommendedSizeId = "s4";
+          recommendationTextEl.textContent = "ตรวจพบงานโลโก้/ตราบริษัท แนะนำขนาด ทรงกลม/วงรี มาตรฐานบริษัท (4.0 ซม.)";
+        } else if (filledCount >= 4) {
+          recommendedSizeId = "s3";
+          recommendationTextEl.textContent = "คุณกรอกข้อความ " + filledCount + " บรรทัด แนะนำ ขนาดใหญ่ (2.2 x 5.5 ซม.)";
+        } else if (filledCount === 3) {
+          recommendedSizeId = "s2";
+          recommendationTextEl.textContent = "คุณกรอกข้อความ 3 บรรทัด แนะนำ ขนาดกลาง (1.5 x 4.0 ซม.)";
+        } else {
+          recommendedSizeId = "s1";
+          recommendationTextEl.textContent = "สำหรับข้อความ 1-2 บรรทัด แนะนำ ขนาดเล็ก (1.0 x 3.0 ซม.)";
+        }
+
+        if (state.sizeId !== recommendedSizeId) {
+          applyRecommendedBtn.style.display = "inline-block";
+        } else {
+          applyRecommendedBtn.style.display = "none";
+        }
+      }
+
+      applyRecommendedBtn.addEventListener("click", function () {
+        state.sizeId = recommendedSizeId;
+        if (recommendedSizeId === "s4") {
+          state.borderStyle = "oval";
+          syncBorderButtons();
+        }
+        renderSizes();
+        updateAll();
+      });
+
+      // Live Preview & Summary Calculation
+      function updateAll() {
+        updateAutoRecommendation();
+
+        const selectedType = STAMP_OPTIONS.stamp_types.find(function (t) {
+          return t.id === state.stampTypeId;
+        }) || STAMP_OPTIONS.stamp_types[0];
+
+        const selectedSize = STAMP_OPTIONS.sizes.find(function (s) {
+          return s.id === state.sizeId;
+        }) || STAMP_OPTIONS.sizes[0];
+
+        const selectedInk = STAMP_OPTIONS.ink_colors.find(function (c) {
+          return c.id === state.inkColorId;
+        }) || STAMP_OPTIONS.ink_colors[0];
+
+        // Update Preview Badge & Scale note
+        previewDimBadge.textContent = "ขนาด: " + selectedSize.dimension;
+        scaleRefLabel.textContent = selectedSize.scale_note;
+        previewInkLabel.textContent = selectedInk.name;
+        previewInkLabel.style.color = selectedInk.hex;
+
+        // Font class
+        stampImpressionBox.classList.toggle("font-sarabun", state.fontStyle === "sarabun");
+        stampImpressionBox.classList.toggle("font-modern", state.fontStyle === "modern");
+
+        // Ink & Border styling on impression box
+        stampImpressionBox.style.color = selectedInk.hex;
+        if (state.borderStyle === "none") {
+          stampImpressionBox.style.border = "2px dashed transparent";
+          stampImpressionBox.style.borderRadius = "4px";
+          stampImpressionBox.style.minWidth = "210px";
+          stampImpressionBox.style.minHeight = "80px";
+        } else if (state.borderStyle === "oval") {
+          stampImpressionBox.style.border = "3px double " + selectedInk.hex;
+          stampImpressionBox.style.borderRadius = "999px";
+          stampImpressionBox.style.minWidth = "230px";
+          stampImpressionBox.style.minHeight = "135px";
+          stampImpressionBox.style.padding = "18px 28px";
+        } else {
+          stampImpressionBox.style.border = "2.5px solid " + selectedInk.hex;
+          stampImpressionBox.style.borderRadius = "4px";
+          stampImpressionBox.style.minWidth = "220px";
+          stampImpressionBox.style.minHeight = "86px";
+          stampImpressionBox.style.padding = "12px 20px";
+        }
+
+        // Logo in preview
+        if (state.logoDataUrl) {
+          stampLogoImg.src = state.logoDataUrl;
+          stampLogoImg.style.display = "block";
+        } else {
+          stampLogoImg.style.display = "none";
+        }
+
+        // Render text lines in preview
+        const nonEmptyLines = state.lines.filter(function (l) {
+          return l.trim().length > 0;
+        });
+
+        stampLinesContainer.innerHTML = "";
+        if (nonEmptyLines.length === 0) {
+          const hint = document.createElement("div");
+          hint.className = "stamp-empty-hint";
+          hint.textContent = "พิมพ์ข้อความในขั้นตอนที่ 3 เพื่อดูตัวอย่างตราประทับจริงที่นี่";
+          stampLinesContainer.appendChild(hint);
+        } else {
+          state.lines.forEach(function (lineText, idx) {
+            if (!lineText.trim()) return;
+            const div = document.createElement("div");
+            div.className = "stamp-line " + (idx === 0 ? "line-primary" : "line-secondary");
+            div.textContent = lineText;
+            stampLinesContainer.appendChild(div);
+          });
+        }
+
+        // Show/hide cross-sell upsell box
+        if (state.stampTypeId === "handle") {
+          upsellSection.style.display = "block";
+        } else {
+          upsellSection.style.display = "none";
+        }
+
+        // Compute Pricing
+        const unitStampPrice = selectedType.base_price + selectedSize.price_add;
+        let addonTotal = 0;
+        const addonNames = [];
+        if (state.stampTypeId === "handle") {
+          if (state.addonE03) {
+            addonTotal += 24;
+            addonNames.push("แท่นประทับ ตราช้าง No.E03 (24฿)");
+          }
+          if (state.addonE04) {
+            addonTotal += 23;
+            addonNames.push("แท่นประทับ ตราช้าง No.E04 (23฿)");
+          }
+        }
+
+        const grandTotal = (unitStampPrice * state.quantity) + addonTotal;
+
+        summaryTypeLabel.textContent = selectedType.name + " (ราคาต่อชิ้น)";
+        summaryBasePrice.textContent = formatTHB(selectedType.base_price) + " บาท";
+        summarySizeLabel.textContent = "ขนาด " + selectedSize.dimension + " (" + selectedSize.label + ")";
+        summarySizePrice.textContent = "+" + formatTHB(selectedSize.price_add) + " บาท";
+
+        if (addonTotal > 0) {
+          summaryAddonRow.style.display = "flex";
+          summaryAddonLabel.textContent = "รับเพิ่ม: " + addonNames.join(", ");
+          summaryAddonPrice.textContent = "+" + formatTHB(addonTotal) + " บาท";
+        } else {
+          summaryAddonRow.style.display = "none";
+        }
+
+        summaryQtyCount.textContent = String(state.quantity);
+        summaryTotalPrice.textContent = formatTHB(grandTotal) + " บาท";
+
+        // Border label for spec text
+        const borderLabelMap = {
+          single: "มีกรอบสี่เหลี่ยม",
+          none: "ไม่มีกรอบ",
+          oval: "กรอบวงรี / ทรงกลมนิติบุคคล"
+        };
+        const fontLabel = state.fontStyle === "sarabun" ? "ฟอนต์สารบรรณ (ทางการ)" : "ฟอนต์สุขุมวิท / โมเดิร์น";
+
+        // Format exact Line OA message template from spec
+        const specLines = [
+          "[สั่งทำตรายาง - หจก. อ.วัฒนภัณฑ์]",
+          "- ประเภท: " + selectedType.name,
+          "- ขนาด: " + selectedSize.dimension + " (" + selectedSize.label + ")",
+          "- สีหมึก: " + selectedInk.name,
+          "- รูปแบบกรอบ: " + borderLabelMap[state.borderStyle] + " | " + fontLabel,
+          "- ข้อความ:",
+          "  บรรทัด 1: " + (state.lines[0].trim() || "-"),
+          "  บรรทัด 2: " + (state.lines[1].trim() || "-"),
+          "  บรรทัด 3: " + (state.lines[2].trim() || "-")
+        ];
+
+        if (state.lines[3].trim()) {
+          specLines.push("  บรรทัด 4: " + state.lines[3].trim());
+        }
+        if (state.logoFileName) {
+          specLines.push("- ไฟล์โลโก้แนบ: " + state.logoFileName + " (ส่งรูปในแชท Line)");
+        }
+        if (addonNames.length > 0) {
+          specLines.push("- สินค้าสั่งซื้อคู่กัน: " + addonNames.join(", "));
+        }
+
+        specLines.push("- จำนวน: " + state.quantity + " ชิ้น");
+        specLines.push("- ราคาประเมินเบื้องต้น: " + formatTHB(grandTotal) + " บาท (รวม VAT 7%)");
+        specLines.push("- ต้องการใบกำกับภาษี: " + (state.needTaxInvoice ? "ต้องการ (แจ้งรายละเอียดบริษัทในแชท)" : "ไม่ต้องการ"));
+
+        lineSpecOutput.value = specLines.join("\n");
+      }
+
+      // Wire up text inputs
+      lineInputs.forEach(function (inputEl, idx) {
+        inputEl.addEventListener("input", function () {
+          state.lines[idx] = inputEl.value;
+          updateAll();
+        });
+      });
+
+      // Wire up quick presets for easy testing
+      document.querySelectorAll(".preset-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const preset = btn.getAttribute("data-preset");
+          if (preset === "name") {
+            state.lines = ["นายสมชาย ใจดี", "ผู้จัดการฝ่ายจัดซื้อ", "", ""];
+            state.sizeId = "s1";
+            state.borderStyle = "none";
+          } else if (preset === "received") {
+            state.lines = ["ตรวจรับเอกสารถูกต้อง", "วันที่ ........../........../..........", "ผู้รับ ........................................", ""];
+            state.sizeId = "s2";
+            state.borderStyle = "single";
+          } else if (preset === "company") {
+            state.lines = [
+              "ห้างหุ้นส่วนจำกัด อ.วัฒนภัณฑ์ (สำนักงานใหญ่)",
+              "20/3-4 ซ.โสภณ 5 ถ.สุขุมวิท 38 ต.มาบตาพุด อ.เมือง จ.ระยอง 21150",
+              "เลขประจำตัวผู้เสียภาษี 0213552000869",
+              "โทร. 092-958-9000, 065-991-5564"
+            ];
+            state.sizeId = "s3";
+            state.borderStyle = "single";
+          } else if (preset === "clear") {
+            state.lines = ["", "", "", ""];
+          }
+
+          lineInputs.forEach(function (inp, i) {
+            inp.value = state.lines[i];
+          });
+          syncBorderButtons();
+          renderSizes();
+          updateAll();
+        });
+      });
+
+      // Wire up Font buttons
+      fontGroupEl.querySelectorAll(".pill-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state.fontStyle = btn.getAttribute("data-font");
+          fontGroupEl.querySelectorAll(".pill-btn").forEach(function (b) {
+            b.classList.toggle("active", b === btn);
+          });
+          updateAll();
+        });
+      });
+
+      // Wire up Border buttons
+      borderGroupEl.querySelectorAll(".pill-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state.borderStyle = btn.getAttribute("data-border");
+          syncBorderButtons();
+          updateAll();
+        });
+      });
+
+      // Wire up Logo file upload
+      logoFileInput.addEventListener("change", function (e) {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        state.logoFileName = file.name;
+        uploadedFilenameEl.textContent = "ไฟล์ที่เลือก: " + file.name;
+        removeLogoBtn.style.display = "inline-block";
+
+        const reader = new FileReader();
+        reader.onload = function (ev) {
+          state.logoDataUrl = ev.target.result;
+          updateAll();
+        };
+        reader.readAsDataURL(file);
+      });
+
+      removeLogoBtn.addEventListener("click", function () {
+        logoFileInput.value = "";
+        state.logoDataUrl = null;
+        state.logoFileName = "";
+        uploadedFilenameEl.textContent = "รองรับไฟล์ภาพ PNG, JPG สำหรับจำลองในช่องตัวอย่างด้านขวา (และส่งไฟล์จริงทาง Line)";
+        removeLogoBtn.style.display = "none";
+        updateAll();
+      });
+
+      // Wire up Cross-sell checkboxes
+      upsellE03.addEventListener("change", function () {
+        state.addonE03 = upsellE03.checked;
+        updateAll();
+      });
+
+      upsellE04.addEventListener("change", function () {
+        state.addonE04 = upsellE04.checked;
+        updateAll();
+      });
+
+      // Wire up Quantity & Tax Invoice
+      function clampQuantity(val) {
+        const parsed = parseInt(val, 10);
+        if (isNaN(parsed) || parsed < 1) return 1;
+        if (parsed > 999) return 999;
+        return parsed;
+      }
+
+      qtyMinusBtn.addEventListener("click", function () {
+        state.quantity = clampQuantity(state.quantity - 1);
+        qtyInput.value = state.quantity;
+        updateAll();
+      });
+
+      qtyPlusBtn.addEventListener("click", function () {
+        state.quantity = clampQuantity(state.quantity + 1);
+        qtyInput.value = state.quantity;
+        updateAll();
+      });
+
+      qtyInput.addEventListener("input", function () {
+        state.quantity = clampQuantity(qtyInput.value);
+        qtyInput.value = state.quantity;
+        updateAll();
+      });
+
+      taxInvoiceCheck.addEventListener("change", function () {
+        state.needTaxInvoice = taxInvoiceCheck.checked;
+        updateAll();
+      });
+
+      // Copy Spec to Clipboard
+      copySpecBtn.addEventListener("click", function () {
+        lineSpecOutput.select();
+        const textToCopy = lineSpecOutput.value;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(textToCopy).catch(function () {
+            document.execCommand("copy");
+          });
+        } else {
+          document.execCommand("copy");
+        }
+        copyBtnText.textContent = "คัดลอกสเปกเรียบร้อย! นำไปวางในแชท Line @aw2552 ได้เลย";
+        setTimeout(function () {
+          copyBtnText.textContent = "คัดลอกสเปกตรายางและสั่งทำผ่าน Line @aw2552";
+        }, 3200);
+      });
+
+      // Initialize UI
+      renderStampTypes();
+      renderSizes();
+      renderInkColors();
+      updateAll();
+    })();
+  </script>
+</body>
+</html>
